@@ -1,0 +1,9 @@
+<h1><%= @article.title.capitalize %></h1>
+<p><%= @article.content.tr('[]"', '') %></p>
+
+<br>
+
+<%= link_to "Edit", edit_article_path %>
+<%= link_to "Delete", article_path(@article), method: :delete, data: { confirm: "Delete #{@article.title.capitalize}"} %>
+
+<%= link_to "Homepage", articles_path %>
