@@ -13,3 +13,49 @@
  *= require_tree .
  *= require_self
  */
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+ font-family: "Varela", sans-serif;
+ margin: 0 100px;
+}
+
+h1 {
+ font-family: "Varela", sans-serif;
+ text-align: center;
+}
+
+nav {
+  margin: 0 -100px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid lightgrey;
+  background-color: #F8F8F8;
+  padding: 0 20px;
+}
+
+nav h1, h2 {
+  color: grey;
+  font-weight: lighter;
+}
+
+nav h1 {
+  font-size: 20px;
+}
+
+nav h2 {
+  font-size: 15px;
+}
+
+nav h2 a {
+  text-decoration: none;
+  color: grey;
+}
+
+nav h2 a:hover {
+  text-decoration: none;
+  color: darkgrey;
+}

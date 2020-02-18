@@ -1,7 +1,6 @@
-<h1>Wikinimous</h1>
-<h2><%= link_to 'New Article', new_article_path %></h2>
-
-<% @articles.each do |article| %>
-  <h3><%= link_to article.title.capitalize, article_path(article) %></h3>
-  <p><%= article.content.tr('[]"', '') %></p>
-<% end %>
+<article class="articles">
+  <% @articles.each do |article| %>
+    <h3><%= link_to article.title.capitalize, article_path(article) %></h3>
+    <p><%= article.content.tr('[]"', '') %></p>
+  <% end %>
+</article>

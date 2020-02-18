@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>RailsWikinimous</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +13,10 @@
   </head>
 
   <body>
+    <nav>
+      <h1>Wikinimous</h1>
+      <h2><%= link_to 'New Article', new_article_path %></h2>
+    </nav>
     <%= yield %>
   </body>
 </html>
